@@ -40,7 +40,7 @@ nav ul li a{
 .hero {
     position: relative;
     height: 500px;
-    background-image: url(/wrr/Images/river-narrow.jpg);
+    background-image: url(../wrr/Images/river-narrow.jpg);
     background-size: cover;
 }
 .hero h1{
