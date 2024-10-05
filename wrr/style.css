@@ -1,0 +1,111 @@
+:root{
+    --primary-color: #fff;
+    --secondary-color: #2a9d8f;
+    --accent1-color: #219EBC;
+    --accent2-color: #264653;
+}
+
+.header{
+    position: fixed;
+    color: #264653;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--accent2-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    transition: .3s;
+}
+nav{
+    padding: 5px 20px;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+.logo{
+    flex: 1;
+}
+.logo a{
+    display: flex;
+    align-items: center;
+}
+.hero {
+    position: relative;
+    height: 500px;
+    background-image: url(/wrr/Images/river-narrow.jpg);
+    background-size: cover;
+}
+.hero h1{
+    font-size: 55px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background-color: var(--accent2-color);
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);    
+}
+.hero article {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondary-color);
+    margin: 20px;
+    opacity: 0.8; /* adjust the value as needed */
+    padding: 20px; /* adjust the value as needed */
+  }
+  .hero article img {
+    width: 50%; /* adjust the value as needed */
+    height: auto;
+    margin-right: 20px; /* adjust the value as needed */
+  }
+  .hero article p {
+    color: var(--primary-color);
+    width: 50%; /* adjust the value as needed */
+    font-size: 16px; /* adjust the value as needed */
+    line-height: 1.5; /* adjust the value as needed */
+  
+  }
+  
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+h2{
+    color: var(--accent2-color);
+}
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+footer p {
+	margin-bottom: 10px;
+}
+
+.socilalinks {
+	margin-top: 20px;
+}
+
+.socilalinks a {
+	margin: 0 10px;
+}
+
+.socilalinks img {
+	width: 30px;
+	height: 30px;
+}
