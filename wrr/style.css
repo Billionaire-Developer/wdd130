@@ -7,7 +7,7 @@
 
 .header{
     position: fixed;
-    color: #264653;
+    color: var(--accent2-color);
     top: 0;
     left: 0;
     width: 100%;
@@ -39,14 +39,15 @@ nav ul li a{
 }
 .hero {
     position: relative;
-    height: 500px;
+    height: 300px;
     background-image: url(/wrr/Images/river-narrow.jpg);
     background-size: cover;
+    background-position: center;
 }
 .hero h1{
-    font-size: 55px;
+    font-size: 36px;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     background-color: var(--accent2-color);
     transform: translate(-50%, -50%);
@@ -81,7 +82,11 @@ nav ul li a{
 .hero img{
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 h2{
     color: var(--accent2-color);
@@ -103,9 +108,12 @@ footer p {
 
 .socilalinks a {
 	margin: 0 10px;
+    text-decoration: none;
+    
 }
 
 .socilalinks img {
 	width: 30px;
 	height: 30px;
+    margin: 0 10px;
 }
