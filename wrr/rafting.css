@@ -1,8 +1,17 @@
+*{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
 :root{
     --primary-color: #fff;
     --secondary-color: #2a9d8f;
     --accent1-color: #219EBC;
     --accent2-color: #264653;
+}
+
+h1, h2, h3 {
+    color: var(--accent2-color);
 }
 
 .header{
@@ -39,19 +48,18 @@ nav ul li a{
 }
 .hero {
     position: relative;
+    width: 80%;
+    margin: 0 auto;
     height: 300px;
-    background-image: url(/wrr/Images/river-narrow.jpg);
     background-size: cover;
     background-position: center;
 }
 .hero h1{
-    font-size: 36px;
+    font-size: 28px;
     position: absolute;
-    top: 50%;
+    top: 16%;
     left: 50%;
-    background-color: var(--accent2-color);
-    transform: translate(-50%, -50%);
-    color: var(--primary-color);    
+    transform: translate(-50%, -50%);  
 }
 .hero article {
     position: absolute;
@@ -59,17 +67,17 @@ nav ul li a{
     display: flex;
     justify-content: space-around;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     background-color: var(--secondary-color);
-    margin: 20px;
-    opacity: 0.8; /* adjust the value as needed */
-    padding: 20px; /* adjust the value as needed */
+    margin: 10px;
+    opacity: 0.7; /* adjust the value as needed */
+    padding: 10px; /* adjust the value as needed */
   }
   .hero article img {
-    width: 50%; /* adjust the value as needed */
+    float: right;
+    width: 50%; 
     height: auto;
-    margin-right: 20px; /* adjust the value as needed */
+    margin-right: 40px;
   }
   .hero article p {
     color: var(--primary-color);
@@ -91,29 +99,14 @@ nav ul li a{
 h2{
     color: var(--accent2-color);
 }
-footer {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
-}
-
-footer p {
-	margin-bottom: 10px;
-}
-
-.socilalinks {
-	margin-top: 20px;
-}
-
 .socilalinks a {
-	margin: 0 10px;
     text-decoration: none;
     
 }
 
 .socilalinks img {
 	width: 30px;
-	height: 30px;
-    margin: 0 10px;
 }
+
+
+/*Thank you!*/
