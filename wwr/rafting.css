@@ -14,22 +14,26 @@ h1, h2, h3 {
     color: var(--accent2-color);
 }
 
-.header{
-    position: fixed;
-    color: var(--accent2-color);
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background: var(--accent2-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    transition: .3s;
+header {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  padding: 1rem;
 }
+.logo {
+  grid-column: 1;
+}
+.logo img {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+
 nav{
     padding: 5px 20px;
+    grid-column: 2;
 }
 nav ul li{
     display: inline-block;
@@ -38,10 +42,12 @@ nav ul li a{
     text-decoration: none;
     width: 100%;
     display: block;
+    color: var(--primary-color);
 }
-.logo{
-    flex: 1;
+nav ul li a:hover{
+  color: var(--secondary-color);
 }
+
 .logo a{
     display: flex;
     align-items: center;
@@ -99,13 +105,78 @@ nav ul li a{
 h2{
     color: var(--accent2-color);
 }
+.history {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+.history-content {
+  grid-column: 2;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.history-content img{
+  float: left;
+}
+
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  max-width: 250px;
+  margin: 1rem;
+  width: calc(20% - 2rem);
+
+}
+figure img {
+  width: 80%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+figcaption {
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
+}
+.adventures{
+  padding: 2rem;
+}
+.adventure-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sociallinks {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
 .socilalinks a {
     text-decoration: none;
+    margin-left: 1rem;
     
 }
 
 .socilalinks img {
-	width: 30px;
+	width: 2rem;
+  height: auto;
+  float: right;
 }
 
 
