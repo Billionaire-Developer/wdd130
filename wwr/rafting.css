@@ -191,6 +191,23 @@ button:hover{
   letter-spacing: 0.25em;
   background: #264653;
 }
+.newsletter{
+  justify-content: center;
+  align-items: center;
+}
+table{
+  width: 500px;
+}
+th{
+  text-align: left;
+}
+table, th, td{
+  border: 1px solid #000;
+}
+th, td{
+  padding: 10px;
+}
+tr
 footer {
   text-align: center;
   padding: 1rem;
