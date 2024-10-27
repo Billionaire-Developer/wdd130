@@ -191,6 +191,19 @@ button:hover{
   letter-spacing: 0.25em;
   background: #264653;
 }
+.trips h1{
+  font-size: 44px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.trips p{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:10px;
+}
 .newsletter{
   justify-content: center;
   align-items: center;
