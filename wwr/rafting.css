@@ -31,10 +31,14 @@ header {
 }
 
 nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   background-color: white;
   border-radius: 20px;
-    padding: 1px 3px;
-    grid-column: 2;
+  padding: 1px 3px;
+  grid-column: 2;
 }
 nav ul li{
     display: inline-block;
